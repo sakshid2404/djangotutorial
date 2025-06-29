@@ -1,0 +1,16 @@
+<center>
+    <p class="center large">vote your opinion :)</p><br><br>
+{% if latest_question_list %}
+    <h2>
+    {% for question in latest_question_list %}
+     <li type="A"><a href="{% url 'polls:detail' question.id %}">{{question.question_text }}</a></li>
+    {% endfor %}
+    </h2>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+</center> 
+

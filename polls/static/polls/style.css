@@ -1,0 +1,19 @@
+ a {
+    color:rgb(red,black,green);
+}
+
+body {
+    background: url("simple-background-backgrounds-passion-simple-1-5c9b95d2b9dfb.png") no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+p.center{
+    text-align:center;
+    color:rgb(0, 0, 0);
+}
+p.large{
+    font-size:300%;
+}
+form{
+    background-color: rgb(81, 132, 132);
+}
